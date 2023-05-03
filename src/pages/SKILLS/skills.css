@@ -1,0 +1,65 @@
+.skill-2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box-content{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.icon-logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.pln{
+   margin: 0rem 1rem;
+   letter-spacing: 3px; 
+}
+.box{
+    width: 100%;
+}
+
+/* .box-content{
+    border: 2px solid;
+    border-image: repeating-linear-gradient(135deg,#1e1e1d 0 10px,#2d2d2c 0 20px,#161516 0 30px) 8;
+    -webkit-mask: 
+      conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+       var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+      conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+       0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+      linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+  }
+  .box-content:hover {
+    --_i: 100%;
+    color: #CC333F;
+    transition: .3s, -webkit-mask-size .3s .3s;
+  } */
+
+@media only screen and (max-width: 600px) {
+    .skill-1{
+        margin: 0px 12px;
+    }
+    .skill-2{
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 12px;
+    }
+    .box-content{
+        width: 100%;
+    }
+    .box{
+        width: 80%;
+    }
+    .main-skill{
+        align-items: center;
+        text-align: center;
+    }
+}

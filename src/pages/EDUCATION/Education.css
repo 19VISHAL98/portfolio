@@ -1,0 +1,34 @@
+.education-data{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f2f3f7;
+    border: 1px solid #ebebed;
+}
+.education-data-active{
+    background-color: #2c98f0;
+}
+
+.education-detail{
+    padding: 1rem;
+    background-color:white;
+    border: 1px solid #ebebed;
+    margin-bottom: 5px;
+    transition: .9s all linear;
+}
+
+
+@media only screen and (max-width: 600px) {
+.education-2{
+    width: 100%;
+    padding: 12px;
+}
+.main-education{
+    text-align: center;
+   
+}
+
+}

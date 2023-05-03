@@ -1,0 +1,51 @@
+.services-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ .services-3-box{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+     max-height: 500px;
+    background-image: url('../../image/cover_bg_1.jpg.webp');
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.number {
+    width: 20%;
+}
+.number h2 {
+    font-size: 40px;
+    display: block;
+    color: rgb(8, 8, 8);
+    font-family: "Quicksand", Arial, sans-serif;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+.number p{
+    color: rgba(9, 9, 9, 0.7);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 6px;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+.services-main{
+    text-align: center;
+}
+.services-3-box{
+    flex-direction: column;
+    width: 100%;
+}
+.number{
+    width: 100%;
+}
+
+}
