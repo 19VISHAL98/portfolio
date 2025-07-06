@@ -1,0 +1,35 @@
+.education-container {
+    background-color: #111;
+    padding: 40px 20px;
+    border-radius: 12px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(30, 144, 255, 0.3);
+}
+
+.education-container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1e90ff;
+}
+
+.education-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #1e90ff;
+}
+
+.education-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.education-card p {
+    font-size: 16px;
+    margin: 4px 0;
+    color: #ccc;
+}

@@ -1,0 +1,36 @@
+.contact-container {
+    background-color: #111;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-heading {
+    font-size: 24px;
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.contact-details strong {
+    color: #1e90ff;
+}
+
+.contact-details a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #1e90ff;
+}

@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+} */
+
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply animated gradient background */
+body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #000000, #0a0f1a, #1e1e1e, #000000);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Smooth animated gradient */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* index.css */
+html {
+    scroll-behavior: smooth;
+}

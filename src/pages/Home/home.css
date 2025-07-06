@@ -1,0 +1,220 @@
+/* Main container */
+.home-container {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+/* Profile image */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+    border: 4px solid #000;
+}
+
+/* Rotating border */
+.image-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 224px;
+    height: 224px;
+    border-radius: 50%;
+    border: 3px dotted #1e90ff;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-wrapper:hover::before {
+    opacity: 1;
+    animation: rotateBorder 2s linear infinite;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Name below image */
+.full-name {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    color: #1e90ff;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: 5;
+}
+
+.image-wrapper:hover .full-name {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* All role styles */
+.role {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #1e1e1e;
+    border: 1px solid #1e90ff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    z-index: 3;
+}
+
+/* Initial position: center of image */
+.role1,
+.role2,
+.role3,
+.role4,
+.role5,
+.role6,
+.role7,
+.role8 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Animated outward positions on hover */
+.image-wrapper:hover .role1 {
+    opacity: 1;
+    transform: translate(-220%, -150%);
+}
+
+.image-wrapper:hover .role2 {
+    opacity: 1;
+    transform: translate(-220%, 50%);
+}
+
+.image-wrapper:hover .role3 {
+    opacity: 1;
+    transform: translate(120%, -150%);
+}
+
+.image-wrapper:hover .role4 {
+    opacity: 1;
+    transform: translate(120%, 50%);
+}
+
+.image-wrapper:hover .role5 {
+    opacity: 1;
+    transform: translate(-200%, -250%);
+}
+
+.image-wrapper:hover .role6 {
+    opacity: 1;
+    transform: translate(130%, -250%);
+}
+
+.image-wrapper:hover .role7 {
+    opacity: 1;
+    transform: translate(-200%, 150%);
+}
+
+.image-wrapper:hover .role8 {
+    opacity: 1;
+    transform: translate(130%, 150%);
+}
+
+/* Text sections (About + Contact) */
+.text-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.about-wrapper,
+.contact-wrapper {
+    flex: 1 1 45%;
+    background-color: #111;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(30, 144, 255, 0.2);
+}
+
+/* Projects section */
+.projects-wrapper {
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .image-wrapper::before {
+        width: 184px;
+        height: 184px;
+    }
+
+    .about-wrapper,
+    .contact-wrapper {
+        flex: 1 1 100%;
+    }
+
+    .role {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 28px;
+    color: #1e90ff;
+    margin-bottom: 20px;
+}
+
+.projects-wrapper,
+.education-wrapper,
+.skills-wrapper,
+.experience-wrapper {
+    margin-top: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-wrapper {
+    margin-bottom: 60px;
+}
